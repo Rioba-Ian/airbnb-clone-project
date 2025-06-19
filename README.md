@@ -7,7 +7,6 @@ This project is a mimic of the popular Airbnb website. The backend is designed t
 ### ⚙️ Technology Stack
 
 - Python (programming language)
-- Django (web framework to build RESTful APIs)
 - Django REST Framework (framework for building web APIs)
 - GraphQL (query language for APIs in a structured format for data retrieval and manipulation)
 - PostgreSQL (robust database management system that can handle large volumes of data and provide high performance)
@@ -20,18 +19,23 @@ This project is a mimic of the popular Airbnb website. The backend is designed t
 We have five tables in our database:
 
 - Users
+
   To manage user information, authentication, and authorization. We will also manage user preferences and settings. Details about the user shall also be stored: name, email, phone number, address, profile picture, etc.
 
 - Properties
+
   To manage property information, including details such as location, amenities, pricing, and availability. We will also manage property preferences and settings. Details about the property shall also be stored: name, description, address, photos, etc.
 
 - Bookings
+
   To manage the specific booking details, including check-in and check-out dates, guest information, and payment status.
 
 - Payments
+
   The payment requests processed, done using payment methods such as credit card, PayPal, or bank transfer. We also see the users and the amount they paid.
 
 - Reviews
+
   Very important for the user experience and reputation management. We will manage reviews, ratings, and feedback from guests. Details about the review shall also be stored: title, content, rating, date, etc.
 
 You can have a close look at the entity diagram below:
