@@ -50,28 +50,43 @@ You can have a close look at the entity diagram below:
 
 2. User Authentication
 
-   Endpoints: /users/, /users/{user_id}/
-   Manage user sessions, including login, logout, and session management. Implement user roles and permissions for secure access control.
+```bash
+users/: /users/{user_id}/
+```
+
+Manage user sessions, including login, logout, and session management. Implement user roles and permissions for secure access control.
 
 3. Property Management
 
-   Endpoints: /properties/, /properties/{property_id}/
-   Let users create, update, retrieve, and delete property listings. Implement property search and filtering features. Also properties are listings that would be users to use properties can book them.
+```bash
+  properties/: /properties/{property_id}/
+```
+
+Let users create, update, retrieve, and delete property listings. Implement property search and filtering features. Also properties are listings that would be users to use properties can book them.
 
 4. Booking System
 
-   Endpoints: /bookings/, /bookings/{booking_id}/
-   Manage bookings, including creating, updating, and canceling bookings. Implement booking status tracking and notifications. Let users view their bookings and cancel them.
+```bash
+bookings/: /bookings/{booking_id}/
+```
+
+Manage bookings, including creating, updating, and canceling bookings. Implement booking status tracking and notifications. Let users view their bookings and cancel them.
 
 5. Payment Processing
 
-   Endpoints: /payments/
-   Handle payment transactions related to bookings. We will have payment gateways to allow users to pay for their bookings securely using various payment methods.
+```bash
+payments/: /payments/
+```
+
+Handle payment transactions related to bookings. We will have payment gateways to allow users to pay for their bookings securely using various payment methods.
 
 6. Review System
 
-   Endpoints: /reviews/, /reviews/{review_id}/
-   Having a feedback system to collect user feedback and ratings for properties. We will have notifications to notify users about new reviews and ratings.
+```bash
+reviews/: /reviews/{review_id}/
+```
+
+Having a feedback system to collect user feedback and ratings for properties. We will have notifications to notify users about new reviews and ratings.
 
 7. Database Optimizations
 
